@@ -199,6 +199,7 @@ input::placeholder {
 }
 #DOB {
   border: none;
+  text-align:center;
 }
 /* * {
   width: 0% !important;
