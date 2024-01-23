@@ -153,7 +153,6 @@ verifybutton.addEventListener("click", () => {
   let validation = validateForm2();
   if (validation === true) {
     audio.play().then(() => {
-      setTimeout(() => {
         jsConfetti.addConfetti({
           confettiRadius: 4,
           confettiNumber: 2000,
@@ -161,7 +160,6 @@ verifybutton.addEventListener("click", () => {
           // emojis:['🎂','🎉','💖'],
           // emojiSize: 10,
         });
-      }, 2000);
     });
     verifybutton.disabled = true;
     logbutton.disabled = false;
