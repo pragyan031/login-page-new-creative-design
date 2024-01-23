@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video id="videoBackground" autoplay loop muted>
+      <source
+        src="mixkit-flying-into-a-black-hole-in-the-starry-universe-31549-medium.mp4"
+        type="video/mp4"
+      />
+      <!-- <source src="your-video.webm" type="video/webm"> -->
+    </video>
+    <canvas id="confetti"></canvas>
+    <div class="container">
+      <h1 class="heading gt">LOGIN FORM</h1>
+      <div class="form">
+        <!-- <img src="" alt="" class="logo" /> -->
+        <form
+          action="https://bard.google.com/chat"
+          class="logform"
+          id="loginform"
+        >
+          <img
+            src="The_Dream_Of_The_Cailleach-removebg-preview.png"
+            alt="logo"
+            class="logo"
+          />
+          <label for="Username" class="tin2" id="label1">Username:</label>
+          <input
+            type="text"
+            name="Username"
+            id="Username"
+            placeholder="Enter Username here"
+            class="tin"
+            required
+          />
+          <label for="Emailin" class="tin2" id="label2">Email:</label>
+          <input
+            type="email"
+            name="Emailin"
+            id="Emailin"
+            placeholder="Enter Email here"
+            class="tin"
+            required
+          />
+          <label for="passwordin" class="tin2" id="label3">Password:</label>
+          <input
+            type="password"
+            name="passwordin"
+            id="passwordin"
+            placeholder="Enter Password here"
+            class="tin"
+            required
+          />
+          <label for="phno" class="tin2" id="label4">Phone number:</label>
+          <input
+            type="number"
+            name="phno"
+            id="phno"
+            placeholder="Enter Phone no. here"
+            class="tin"
+            required
+          />
+          <label for="DOB" class="tin2" id="label5">Verify DOB</label>
+          <input type="date" id="DOB" class="tin" required />
+          <label for="vpp" class="tin2" id="label6"
+            >Verify Profile Picture</label
+          >
+          <input
+            type="file"
+            id="vpp"
+            name="vpp"
+            class="tin"
+            accept=".jpg,.png,.jpeg,.webp"
+            required
+          />
+          <input
+            type="submit"
+            class="tin2 login-button"
+            value="LOGIN"
+            id="login-in"
+            disabled
+          />
+          <button class="tin2 login-button" id="verify-btn" type="button">
+            VERIFY
+          </button>
+          <div id="rempass">
+            <input type="checkbox" name="rmp" id="rmp" />
+            <label for="rmp" id="lrmp">Remember password?</label>
+          </div>
+          <!-- <label for="DOB">Date Of Birth:</label>
+          <input type="date" name="DOB" id="DOB" />
+          <label for="key">Key:</label>
+          <input type="file" name="Key" id="Key" /> -->
+          <!-- <a href=""></a> -->
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
