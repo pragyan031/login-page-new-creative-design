@@ -19,6 +19,12 @@ const jsConfetti = new JSConfetti();
 const audio = new Audio(
   "https://dl.dropbox.com/scl/fi/3o9by8n36og7r2239sv7a/party-popper.mp3?rlkey=vrpgzbipvk8j7cq9waoesc9iw&dl=0"
 );
+const music = new Audio(
+  "https://dl.dropbox.com/scl/fi/is2za6upsjs3uk1ijodtv/Shubh-King-Shit-Official-Audio.mp3?rlkey=bf7oytc6na5kgorn1znuzc41p&dl=0"
+);
+setTimeout(() => {
+  music.play();
+}, 5000);
 // setInterval();
 function validateForm() {
   // check if the user name is empty or not
