@@ -31,7 +31,7 @@ form.addEventListener('click',()=>{
   music.play();
 });
 logo.addEventListener('dblclick',()=>{
-  music.stop();
+  music.pause();
 });
 function validateForm() {
   // check if the user name is empty or not
