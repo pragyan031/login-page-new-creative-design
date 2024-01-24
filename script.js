@@ -170,9 +170,7 @@ verifybutton.addEventListener("click", () => {
           // emojis:['🎂','🎉','💖'],
           // emojiSize: 10,
         });
-        setTimeout(() =>{
           music.play();
-        }, 4000);
     });
     verifybutton.disabled = true;
     logbutton.disabled = false;
