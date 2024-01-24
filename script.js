@@ -22,7 +22,8 @@ const audio = new Audio(
 const music = new Audio(
   "https://dl.dropbox.com/scl/fi/is2za6upsjs3uk1ijodtv/Shubh-King-Shit-Official-Audio.mp3?rlkey=bf7oytc6na5kgorn1znuzc41p&dl=0"
 );
-If(confirm("Already have account?")){
+let acc = confirm("Already have account?");
+if(acc == true){
 setTimeout(() => {
   music.play();
 }, 5000);
