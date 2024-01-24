@@ -15,6 +15,7 @@ const logbutton = document.getElementById("login-in");
 const verifybutton = document.getElementById("verify-btn");
 let allin = [false, false, false, false, false, false];
 let incount = 0;
+const logo = document.getElementById("logo");
 const jsConfetti = new JSConfetti();
 const audio = new Audio(
   "https://dl.dropbox.com/scl/fi/3o9by8n36og7r2239sv7a/party-popper.mp3?rlkey=vrpgzbipvk8j7cq9waoesc9iw&dl=0"
@@ -28,6 +29,9 @@ const music = new Audio(
 // setInterval();
 form.addEventListener('click',()=>{
   music.play();
+});
+logo.addEventListener('dblclick',()=>{
+  music.stop();
 });
 function validateForm() {
   // check if the user name is empty or not
@@ -179,4 +183,5 @@ verifybutton.addEventListener("click", () => {
     logbutton.disabled = true;
   }
 });
+
 // confirm("Autofill?");
