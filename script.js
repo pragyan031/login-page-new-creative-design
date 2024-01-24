@@ -15,7 +15,7 @@ const logbutton = document.getElementById("login-in");
 const verifybutton = document.getElementById("verify-btn");
 let allin = [false, false, false, false, false, false];
 let incount = 0;
-const logo = document.getElementByClassName("logo");
+const logo = document.getElementsByClassName("logo");
 const jsConfetti = new JSConfetti();
 const audio = new Audio(
   "https://dl.dropbox.com/scl/fi/3o9by8n36og7r2239sv7a/party-popper.mp3?rlkey=vrpgzbipvk8j7cq9waoesc9iw&dl=0"
