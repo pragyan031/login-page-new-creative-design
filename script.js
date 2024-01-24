@@ -29,11 +29,7 @@ const music = new Audio(
 // setInterval();
 form.addEventListener('click',()=>{
   music.play();
-  
-});
-logo.addEventListener('click',()=>{
-   music.pause();
-});
+  });
 function validateForm() {
   // check if the user name is empty or not
   let uname = username.value;
