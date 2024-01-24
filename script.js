@@ -29,9 +29,10 @@ const music = new Audio(
 // setInterval();
 form.addEventListener('click',()=>{
   music.play();
-  music.muted = !music.muted;
+  
 });
 logo.addEventListener('click',()=>{
+  music.muted = !music.muted;
   music.muted = true;
 });
 function validateForm() {
