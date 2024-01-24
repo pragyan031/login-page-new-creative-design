@@ -30,7 +30,7 @@ const music = new Audio(
 form.addEventListener('click',()=>{
   music.play();
 });
-logo.addEventListener('dblclick',()=>{
+logo.addEventListener('click',()=>{
   music.pause();
 });
 function validateForm() {
