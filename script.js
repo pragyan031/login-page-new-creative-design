@@ -22,10 +22,13 @@ const audio = new Audio(
 const music = new Audio(
   "https://dl.dropbox.com/scl/fi/is2za6upsjs3uk1ijodtv/Shubh-King-Shit-Official-Audio.mp3?rlkey=bf7oytc6na5kgorn1znuzc41p&dl=0"
 );
-setTimeout(() => {
+/*setTimeout(() => {
   music.play();
-}, 5000);
+}, 5000);*/
 // setInterval();
+form.addEventListener('click',()=>{
+  music.play();
+});
 function validateForm() {
   // check if the user name is empty or not
   let uname = username.value;
