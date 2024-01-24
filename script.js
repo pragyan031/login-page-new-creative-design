@@ -32,8 +32,7 @@ form.addEventListener('click',()=>{
   
 });
 logo.addEventListener('click',()=>{
-  music.muted = !music.muted;
-  music.muted = true;
+   music.pause();
 });
 function validateForm() {
   // check if the user name is empty or not
